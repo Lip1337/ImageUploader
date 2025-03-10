@@ -57,8 +57,8 @@ app.get("/embed/:filename", (req, res) => {
         const uploadTime = new Date(stats.birthtime).toLocaleString();
 
         res.send(`
-            <meta property="og:title" content="Bild-Upload">
-            <meta property="og:description" content="📸 Bildname: ${filename}\n📅 Hochgeladen am: ${uploadTime}\n📦 Größe: ${fileSize}">
+            <meta property="og:title" content="${filename}">
+            // <meta property="og:description" content="📸 Bildname: ${filename}\n📅 Hochgeladen am: ${uploadTime}\n📦 Größe: ${fileSize}">
             <meta property="og:image" content="${imageUrl}">
             <meta property="og:url" content="${imageUrl}">
             <meta name="twitter:card" content="summary_large_image">
