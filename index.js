@@ -58,7 +58,7 @@ app.get("/embed/:filename", (req, res) => {
 
         res.send(`
             <meta property="og:title" content="${filename}">
-            // <meta property="og:description" content="📸 Bildname: ${filename}\n📅 Hochgeladen am: ${uploadTime}\n📦 Größe: ${fileSize}">
+            <meta property="og:description" content="📅 Hochgeladen am: ${uploadTime}\n📦 Größe: ${fileSize}">
             <meta property="og:image" content="${imageUrl}">
             <meta property="og:url" content="${imageUrl}">
             <meta name="twitter:card" content="summary_large_image">
