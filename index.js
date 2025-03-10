@@ -31,7 +31,7 @@ app.post("/upload", upload.single("image"), (req, res) => {
         return res.status(400).json({ error: "Kein Bild hochgeladen" });
     }
 
-    const baseUrl = "https://randomstring.ngrok.io"; // Ersetze mit deiner URL
+    const baseUrl = "https://lip-projects-imageuploader.wtjour.easypanel.host"; // Ersetze mit deiner URL
     const imageUrl = `${baseUrl}/uploads/${req.file.filename}`;
     const embedUrl = `${baseUrl}/embed/${req.file.filename}`;
 
