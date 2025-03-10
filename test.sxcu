@@ -1,0 +1,12 @@
+{
+    "Name": "MeinUploader",
+    "DestinationType": "ImageUploader",
+    "RequestType": "POST",
+    "RequestURL": "http://localhost:3000/upload",
+    "FileFormName": "image",
+    "ResponseType": "JSON",
+    "Headers": {
+        "Content-Type": "multipart/form-data"
+    },
+    "URL": "$json:url$"
+}
